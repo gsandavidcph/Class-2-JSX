@@ -1,9 +1,11 @@
+/* Base reset for predictable spacing and sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page canvas: center pricing content on viewport */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Layout: horizontal row of pricing cards */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Card shell: shared size, spacing, and surface color */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Upper content area inside each card */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan title styling (Hobby / Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row wrapper and alignment */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (Free / $20) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Supporting billing period text (/mo.) */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Spacing block before bottom CTA button */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro label above features list */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Features list base reset */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Feature item row: icon + text alignment */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon next to each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Shared button style for all card CTAs */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,6 +124,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover/active feedback for default button */
 .download-button:hover {
     background-color: #D8D6CE;
 }
@@ -117,11 +133,13 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Visual emphasis for primary CTA (Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Hover/active feedback for primary button */
 .download-button.primary:hover {
     background-color: #333;
 }
@@ -130,6 +148,7 @@ body {
     background-color: #333;
 }
 
+/* Floating tag at top to label page version */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +162,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Strong text inside page label */
 .page-label strong {
     color: #333;
 }
