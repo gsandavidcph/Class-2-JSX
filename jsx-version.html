@@ -57,7 +57,12 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
+                features: [
+                    'No credit card required', 
+                    'Limited Agent requests', 
+                    'Limited Tab completions',
+                    'Trying to test something here',
+                    ],
                 buttonText: 'Download',
                 buttonVariant: 'secondary',
             };
@@ -83,8 +88,16 @@
                     'Unlimited Tab completions',
                 ],
                 buttonText: 'Get Enterprise',
-                buttonVariant: 'secondary',
+                buttonVariant: 'primary',
                 
+            };
+            const customPlan = {
+                title: 'Custom',
+                price: 'Custom',
+                includesText: 'Custom',
+                features: ['Custom', 'Custom2', 'Custom3', 'Custom4'],
+                buttonText: 'Get Custom',
+                buttonVariant: 'tertiary',
             };
             return (
                 // <> is a React Fragment - it groups elements without adding extra HTML divs
@@ -96,6 +109,7 @@
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
                         <PricingCard {...enterprisePlan} />
+                        <PricingCard {...customPlan} />
                     </div>
                 </>
             );
