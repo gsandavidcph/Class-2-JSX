@@ -149,7 +149,7 @@ body {
 }
 
 .download-button.tertiary {
-    background-color: #transparent;
+    background-color: transparent;
     color: #333;
     border: 1px solid #c2c1ba;
 }
